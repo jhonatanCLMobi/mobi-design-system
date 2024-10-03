@@ -12,7 +12,6 @@ const CardSeguro: React.FC<CardSeguroProps> = ({ isHover, title, description, pa
 
   const svgStyles = {
     opacity: isHover ? 1 : 0.3, // Cambia la opacidad según isHover
-    transition: 'opacity 0.3s ease', // Transición suave de opacidad
     filter: !isHover ? 'invert(100%) sepia(100%) saturate(0%) hue-rotate(360deg) brightness(200%) contrast(100%)' : 'none'
   };
 
@@ -26,6 +25,8 @@ const CardSeguro: React.FC<CardSeguroProps> = ({ isHover, title, description, pa
         <img
           src={pathImg}
           alt=""
+          // width={158}
+          // height={158}
         />
       </div>
     </div>

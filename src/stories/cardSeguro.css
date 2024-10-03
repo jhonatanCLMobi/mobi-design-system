@@ -45,11 +45,16 @@
   line-height: px;
 }
 
+
 .icon-container {
-  width: 158px;
-  height: 158px;
   position: absolute;
-  left: 79px;
-  top: 112px;
-  /* fill: white; */
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-10%);
+}
+
+.icon-container img {
+  max-width: 100%;
+  width: 158px;
+  height: auto;
 }
