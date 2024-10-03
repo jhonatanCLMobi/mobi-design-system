@@ -2,13 +2,15 @@
   background-color: rgba(16.000000946223736, 24.000000469386578, 32.00000189244747, 1);
   width: 255px;
   height: 239px;
-  border-top-left-radius: 24px;
-  border-top-right-radius: 24px;
-  border-bottom-left-radius: 24px;
-  border-bottom-right-radius: 24px;
-  position: absolute;
+  border-radius: 24px;
   font-family: 'Montserrat', sans-serif;
-  /* font-family: 'Montserrat'; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .content {

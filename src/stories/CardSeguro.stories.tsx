@@ -26,7 +26,6 @@ export const Default = Template.bind({});
 Default.args = {
   title: 'Seguro',
   description: 'contra accidentes',
-  isHover: false,
   pathImg: 'https://dev.d13yul9p634ddi.amplifyapp.com/assets/assets/benefits/seguro_hover.png',
 };
 
@@ -34,6 +33,5 @@ export const Variante = Template.bind({});
 Variante.args = {
   title: 'Seguro',
   description: 'contra accidentes',
-  isHover: true,
   pathImg: 'https://dev.d13yul9p634ddi.amplifyapp.com/assets/assets/benefits/seguro_hover.png',
 };

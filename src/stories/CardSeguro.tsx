@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './CardSeguro.css';
 
 interface CardSeguroProps {
-  isHover: boolean;
   title: string; // parámetro 1
   description: string; // parámetro 2
   pathImg: string; // parámetro 3, para pasar un ícono personalizado
 }
 
-const CardSeguro: React.FC<CardSeguroProps> = ({ isHover, title, description, pathImg }) => {
+const CardSeguro: React.FC<CardSeguroProps> = ({ title, description, pathImg }) => {
+  const [isHover, setIsHover] = useState(false);
 
   const svgStyles = {
     opacity: isHover ? 1 : 0.3, // Cambia la opacidad según isHover
@@ -16,7 +16,11 @@ const CardSeguro: React.FC<CardSeguroProps> = ({ isHover, title, description, pa
   };
 
   return (
-    <div className='card'>
+    <div
+      className='card'
+      onMouseEnter={() => setIsHover(true)}  // Cambia el estado a true al hacer hover
+      onMouseLeave={() => setIsHover(false)} // Cambia el estado a false al salir del hover
+    >
       <div className='content'>
         <h2 className='title'>{title}</h2>
         {isHover && <span className='description'>{description}</span>}
@@ -25,8 +29,6 @@ const CardSeguro: React.FC<CardSeguroProps> = ({ isHover, title, description, pa
         <img
           src={pathImg}
           alt=""
-          // width={158}
-          // height={158}
         />
       </div>
     </div>
