@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
 import './CardSeguro.css';
+import { useState } from 'preact/hooks'; // Cambia esto a 'react' si es necesario
 
 interface CardSeguroProps {
   title: string; // parámetro 1
