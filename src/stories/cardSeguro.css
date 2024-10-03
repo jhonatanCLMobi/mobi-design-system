@@ -1,0 +1,55 @@
+.card {
+  background-color: rgba(16.000000946223736, 24.000000469386578, 32.00000189244747, 1);
+  width: 255px;
+  height: 239px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat'; */
+}
+
+.content {
+  width: 218px;
+  height: 104px;
+  position: absolute;
+  left: 24px;
+  top: 0px;
+}
+
+.title {
+  color: rgba(255, 255, 255, 1);
+  width: 218px;
+  height: 72px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  text-align: left;
+  font-size: 22px;
+  letter-spacing: -0.5;
+  line-height: px;
+}
+
+.description {
+  color: rgba(255, 255, 255, 1);
+  width: 134px;
+  height: 72px;
+  position: absolute;
+  left: 0px;
+  top: 52px;
+  text-align: left;
+  font-size: 16px;
+  letter-spacing: -0.5;
+  line-height: px;
+}
+
+.icon-container {
+  width: 158px;
+  height: 158px;
+  position: absolute;
+  left: 79px;
+  top: 112px;
+  /* fill: white; */
+}
