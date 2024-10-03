@@ -1,1 +1,1 @@
-export * from './src/stories/CardSeguro';
+export { default as CardSeguro } from './src/stories/CardSeguro';
